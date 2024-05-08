@@ -1,8 +1,8 @@
 # Site Settings
-name: Jekflix
-title: Jekflix | A blog theme for Jekyll
-description: Jekflix is a template for Jekyll inspired by Netflix and made by
-  Thiago Rossener.
+name: Bilal
+title: Bilal's Portfolio | A website of progress and projects
+description: Something that goes here
+  and here...
 tags:
   - blog
   - template
@@ -19,7 +19,7 @@ menu:
     url: /contact
   - title: Feed
     url: /feed.xml
-email: youremail@test.com
+email: bilaldawood099@outlook.com
 # See: https://disqus.com/
 disqus_username: disqus_username
 # Contact Form Setting
