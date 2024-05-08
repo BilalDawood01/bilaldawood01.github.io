@@ -1,6 +1,6 @@
 # Site Settings
 name: Bilal
-title: Bilal's Portfolio | A website of progress and projects
+title: My Portfolio | A website of progress and projects
 description: Something that goes here
   and here...
 tags:
@@ -29,11 +29,9 @@ formspree_form_id: formspree_form_id
 
 # Social Media Settings
 # Remove the item if you don't need it
-github_username: github_username
-facebook_username: facebook_username
-twitter_username: twitter_username
+github_username: BilalDawood01
 instagram_username: instagram_username
-linkedin_username: linkedin_username
+linkedin_username: https://www.linkedin.com/in/bilal-dawood-2021/
 medium_username: medium_username
 
 
@@ -46,7 +44,7 @@ two_columns_layout: true
 
 # Advanced Settings
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "bilalportfol.io" # the base hostname & protocol for your site
 google_analytics: "UA-XXXXXXXX-X"
 language: "en"
 categories_folder: category
