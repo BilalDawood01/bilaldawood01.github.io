@@ -7,7 +7,7 @@ description: Some description.
 permalink: /about/
 ---
 
-<img class="img-rounded" src="/assets/img/uploads/profile.jpg" alt="Bilal Ahmed Dawood" width="200">
+<img class="img-rounded" src="/assets/img/uploads/profile.jpg" alt="Bilal Ahmed Dawood" width="400">
 
 # About
 

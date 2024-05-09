@@ -7,9 +7,9 @@ description: >-
   Beyond academics, I find enjoy partaking in sports like football, basketball, and swimming, fueling my energy  and teamwork skills. With diverse project experience, I'm equipped to make meaningful contributions in electronics and technolog.
   
 image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821647/theme6_qeeojf.jpg
+  /assets/img/uploads/profile.jpg
 optimized_image: >-
-  https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821647/theme6_qeeojf.jpg
+  /assets/img/uploads/profile.jpg
 category: blog
 tags:
   - welcome
