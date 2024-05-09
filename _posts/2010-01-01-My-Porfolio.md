@@ -7,13 +7,12 @@ description: >-
   Beyond academics, I find enjoy partaking in sports like football, basketball, and swimming, fueling my energy  and teamwork skills. With diverse project experience, I'm equipped to make meaningful contributions in electronics and technolog.
   
 image: >-
-  /assets/img/uploads/profile.jpg
+  src="/assets/img/uploads/background.jpg"
 optimized_image: >-
-  /assets/img/uploads/profile.jpg
-category: blog
+  src= "/assets/img/uploads/background.jpg"
+category: Intro
 tags:
   - welcome
-  - blog
 author: Bilal
 paginate: true
 ---
