@@ -6,16 +6,15 @@ description: >-
   I'm Bilal Dawood, an Electrical Engineering student at the University of Calgary. Passionate about innovation, I'm eager to carve a career path in embedded systems and AI/ML. 
   Beyond academics, I find enjoy partaking in sports like football, basketball, and swimming, fueling my energy  and teamwork skills. With diverse project experience, I'm equipped to make meaningful contributions in electronics and technolog.
   
-image: >-
-  src="/assets/img/uploads/background.jpg"
-optimized_image: >-
-  src= "/assets/img/uploads/background.jpg"
+image: "/assets/img/uploads/portfolio_bkg_opt.jpg"
+optimized_image: "/assets/img/uploads/portfolio_bkg_opt.jpg"
 category: Intro
 tags:
   - welcome
 author: Bilal
 paginate: true
 ---
+hehe, im probably gonna remove all this ngl.
 Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
 
 > Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
