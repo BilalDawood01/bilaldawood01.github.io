@@ -1,19 +1,26 @@
 ---
-date: 2024-02-15 12:26:40
+date: 2023-02-15 12:26:40
 layout: post
 title: Ericsson Indoor Planner Backend Programmer (MATLAB)
 subtitle: Assisted with code development of EIP backend calculations
 description: Utilized MATLAB and internal documentation to assist wit development of tool
 image: "/assets/img/uploads/STM32F411E-DISCO.png"
-optimized_image: "/assets/img/uploads/eip_matlab.jpg"
+optimized_image: "/assets/img/uploads/digital_hw.jpg"
 category: Work Experience
 tags:
   - Python
+  - PuTTy
+  - Gerrit
+  - Cadence Allegro Schematic Design
+  - Circuit Schematic Design and Verification
+  - Electrical Verification
   - Documentation
   - Report Writing
-  - Electrical Verification
-  - 
-  - Gerrit 
+  - Presentation
+  - Organization
+  - Planning
+  - Analytical Thinking
+  - Problem Solving
 author: Bilal Dawood
 paginate: true
 ---

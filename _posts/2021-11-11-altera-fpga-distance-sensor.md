@@ -1,16 +1,19 @@
 ---
-date: 2017-08-07 23:04:08
+date: 2021-11-11 23:04:08
 layout: post
-title: A star has fallen from the sky and the cat ate it
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559822138/theme10_xenudc.jpg
-optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559822138/theme10_xenudc.jpg
-category: music
+title: FPGA Distance Sensor
+subtitle: 
+description: Implementing a distance sensor utilizing altera-de10 lite, piezzo electric speaker and ultrasonic distance sensor. 
+optimized_image: "/assets/img/uploads/altera_de10_lite.png"
+category: FPGA
 tags:
-  - crazy
-  - story
-author: mranderson
+  - FPGA
+  - Verilog
+  - Intel Quartus Prime
+  - RTL simulation
+  - Sensor Integration
+  - Documentation
+author: Bilal Dawood
 ---
 
 Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.

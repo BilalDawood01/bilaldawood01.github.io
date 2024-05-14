@@ -1,16 +1,20 @@
 ---
-date: 2018-04-21 12:26:40
+date: 2021-01-10 12:26:40
 layout: post
-title: Candy, candies, candy!
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559822137/theme11_vei7iw.jpg
-optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559822137/theme11_vei7iw.jpg
-category: diet
+title: University of Calgary IEEE Student Body
+subtitle: Treasurer
+description: Assisted with blah blah blah
+image: "/assets/img/uploads/STM32F411E-DISCO.png"
+optimized_image: "/assets/img/uploads/ieee.jpg"
+category: University Club Activities
 tags:
-  - food
-  - tips
-author: mranderson
+  - Report Writing
+  - Documentation
+  - Analysis
+  - Microsoft Excel
+  - Presentation
+author: Bilal Dawood
+paginate: true
 ---
 
 Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.

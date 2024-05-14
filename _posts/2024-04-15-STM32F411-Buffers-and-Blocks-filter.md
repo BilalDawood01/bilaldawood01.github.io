@@ -5,7 +5,7 @@ title: Audio Filtering on STM32F411 Microcontroller
 subtitle: Implement and compare Circular buffer, block processing and ARM assembly commands
 description: Implementation of various FIR filters on the ARM Cortex M4 processor through the use of ARM Assembly and C Code to clean a signal. 
 image: "/assets/img/uploads/STM32F411E-DISCO.png"
-optimized_image: "/assets/img/uploads/STM32F411E-DISCO.png"
+optimized_image: "/assets/img/uploads/audio_filtering.png"
 category: Embedded Designing
 tags:
   - Team Project

@@ -1,5 +1,5 @@
 ---
-date: 2018-11-22 12:26:40
+date: 2024-05-05 12:26:40
 layout: post
 title: Automated Enforcement of Bus-Only-Lanes and Crossing
 subtitle: Engineering Capstone Project with Calgary Transit

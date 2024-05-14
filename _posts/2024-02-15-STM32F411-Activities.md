@@ -5,7 +5,7 @@ title: STM32F411 Microcontroller Activities
 subtitle: Implementations of IIR and FIR filters on the ARM Cortex M4 Processor
 description: Implementation of various FIR and IIR filters on the ARM Cortex M4 processor through the use of ARM Assembly and C Code. 
 image: "/assets/img/uploads/STM32F411E-DISCO.png"
-optimized_image: "/assets/img/uploads/STM32F411E-DISCO.png"
+optimized_image: "/assets/img/uploads/IIR-filter.png"
 category: Embedded Designing
 tags:
   - Micrcontroller
@@ -16,6 +16,7 @@ tags:
   - C code
   - Assembly Analysis
   - Software Optimization
+  - Digital Signal Processing
 author: Bilal Dawood
 paginate: true
 ---

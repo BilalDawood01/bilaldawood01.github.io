@@ -4,8 +4,7 @@ layout: post
 title: Ericsson Indoor Planner Backend Programmer (MATLAB)
 subtitle: Assisted with code development of EIP backend calculations
 description: Utilized MATLAB and internal documentation to assist wit development of tool
-image: "/assets/img/uploads/STM32F411E-DISCO.png"
-optimized_image: "/assets/img/uploads/"
+optimized_image: "/assets/img/uploads/pakistan_flood_relief.jpg"
 category: Volunteer
 tags:
   - Teamwork

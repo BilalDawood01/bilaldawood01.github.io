@@ -1,17 +1,20 @@
 ---
-date: 2018-02-03 12:26:40
+date: 2022-04-03 12:26:40
 layout: post
-title: How to turn your dog into a Jedi master
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559821648/theme8_knvabs.jpg
-optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559821648/theme8_knvabs.jpg
-category: tutorial
+title: NI Multisim Analogue Receiver
+subtitle: 
+description: Designing an Analogu Receiever in Multisim using 
+image: 
+optimized_image: "/assets/img/uploads/analogue_rx.png"
+category: Telecommunication
 tags:
-  - jedi
-  - doggo
-  - starwars
-author: mranderson
+  - Schematic Design
+  - Analogue
+  - NI Multisim
+  - Report Writing
+  - Analysis
+  - Problem Solving
+author: Bilal Dawood
 ---
 
 Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
