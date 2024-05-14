@@ -1,23 +1,16 @@
 ---
-date: 2024-11-22 12:26:40
+date: 2024-02-15 12:26:40
 layout: post
-title: STM32F411 Microcontroller Projects 
-subtitle: Optimizations and filters on the ARM Cortex M4 Processor
-description: Implementation of various FIR and IIR filters on the ARM Cortex M4 processor through the use of ARM Assembly and C Code. 
+title: Ericsson Indoor Planner Backend Programmer (MATLAB)
+subtitle: Assisted with code development of EIP backend calculations
+description: Utilized MATLAB and internal documentation to assist wit development of tool
 image: "/assets/img/uploads/STM32F411E-DISCO.png"
-optimized_image: "/assets/img/uploads/STM32F411E-DISCO.jpg"
-category: Embedded Designing
+optimized_image: "/assets/img/uploads/"
+category: Volunteer
 tags:
-  - Team Project
-  - Software Design 
-  - Micrcontroller
-  - Python
-  - Embedded designing
-  - Optimization
-  - Report Writing
-  - ARM Assembly 
-  - C code
-  - Assembly Analysis
+  - Teamwork
+  - Organization
+  - Fundraising
 author: Bilal Dawood
 paginate: true
 ---

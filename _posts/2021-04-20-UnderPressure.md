@@ -1,22 +1,16 @@
 ---
-date: 2018-11-22 12:26:40
+date: 2017-06-08 12:00:00
 layout: post
-title: Automated Enforcement of Bus-Only-Lanes and Crossing
-subtitle: Engineering Capstone Project with Calgary Transit
-description: A lot of work, but rpi, sensors, some ML and a server??? We did all that in 8 months??
-image: "/assets/img/uploads/aebolc_bol.png"
-optimized_image: "/assets/img/uploads/aebolc_bol_opt.jpg"
-category: Projects
+title: Do you believe that a spider can dance?
+subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+category: travel
+image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559824306/theme13_dshbqx.jpg
+optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559824306/theme13_dshbqx.jpg
 tags:
-  - Team Project
-  - Hardware Design
-  - Software Design 
-  - Python
-  - Raspberry Pi
-  - Embedded designing
-  - Optimization
-author: Bilal Dawood
-paginate: true
+  - fate
+  - travel
+author: mranderson
 ---
 
 Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
@@ -24,8 +18,6 @@ Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, na
 > Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
 
 Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
-
-<!--page-->
 
 ## Inline HTML elements
 
@@ -39,8 +31,6 @@ HTML defines a long list of available inline tags, a complete list of which can 
 - Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
 
 Most of these elements are styled by browsers with few modifications on our part.
-
-<!--page-->
 
 # Heading 1
 
@@ -67,8 +57,6 @@ adder(2, 6);
 // > 8
 ```
 
-<!--page-->
-
 Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
 
 ## Lists
@@ -84,8 +72,6 @@ Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a p
 1. Vestibulum id ligula porta felis euismod semper.
 2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 3. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-<!--page-->
 
 Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
 
@@ -137,16 +123,4 @@ Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, conse
   </tbody>
 </table>
 
-<!--page-->
-
 Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-
-
-
-
-
-
-
-
-

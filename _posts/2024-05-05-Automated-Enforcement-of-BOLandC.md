@@ -1,38 +1,49 @@
 ---
+date: 2018-11-22 12:26:40
 layout: post
-title: Bilal Dawood's Portfolio
-subtitle: 'An overview of my projects and academic progress'
-description: >-
-  I'm Bilal Dawood, an Electrical Engineering student at the University of Calgary. Passionate about innovation, I'm eager to carve a career path in embedded systems and AI/ML. 
-  Beyond academics, I find enjoy partaking in sports like football, basketball, and swimming, fueling my energy  and teamwork skills. With diverse project experience, I'm equipped to make meaningful contributions in electronics and technolog.
-  
-image: "/assets/img/uploads/portfolio_bkg_opt.jpg"
-optimized_image: "/assets/img/uploads/portfolio_bkg_opt.jpg"
-category: Intro
+title: Automated Enforcement of Bus-Only-Lanes and Crossing
+subtitle: Engineering Capstone Project with Calgary Transit
+description: A lot of work, but rpi, sensors, some ML and a server??? We did all that in 8 months??
+image: "/assets/img/uploads/aebolc_bol.png"
+optimized_image: "/assets/img/uploads/aebolc_bol_opt.jpg"
+category: Multilevel Projects
 tags:
-  - welcome
-author: Bilal
+  - Team Project
+  - Hardware Design
+  - Software Design 
+  - Python
+  - Raspberry Pi
+  - Embedded designing
+  - Optimization
+  - Presentation
+  - Report Writing
+  - CAD Design
+author: Bilal Dawood
 paginate: true
 ---
-hehe, im probably gonna remove all this ngl.
+
 Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
 
 > Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
 
 Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
 
+<!--page-->
+
 ## Inline HTML elements
 
 HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
 
-* **To bold text**, use `<strong>`.
-* *To italicize text*, use `<em>`.
-* Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-* Citations, like <cite>&mdash; Thomas A. Anderson</cite>, should use `<cite>`.
-* <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-* Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
+- **To bold text**, use `<strong>`.
+- *To italicize text*, use `<em>`.
+- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
+- Citations, like <cite>&mdash; Thomas A. Anderson</cite>, should use `<cite>`.
+- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
+- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
 
 Most of these elements are styled by browsers with few modifications on our part.
+
+<!--page-->
 
 # Heading 1
 
@@ -43,8 +54,6 @@ Most of these elements are styled by browsers with few modifications on our part
 #### Heading 4
 
 Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
---page-break--
 
 ## Code
 
@@ -60,6 +69,8 @@ var adder = new Function("a", "b", "return a + b");
 adder(2, 6);
 // > 8
 ```
+
+<!--page-->
 
 Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
 
@@ -77,6 +88,8 @@ Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a p
 2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
 3. Maecenas sed diam eget risus varius blandit sit amet non magna.
 
+<!--page-->
+
 Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
 
 Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
@@ -85,7 +98,9 @@ Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo r
 
 Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
 
-![placeholder](https://placehold.it/800x400 "Large example image") ![placeholder](https://placehold.it/400x200 "Medium example image") ![placeholder](https://placehold.it/200x200 "Small example image")
+![placeholder](https://placehold.it/800x400 "Large example image")
+![placeholder](https://placehold.it/400x200 "Medium example image")
+![placeholder](https://placehold.it/200x200 "Small example image")
 
 ## Tables
 
@@ -125,4 +140,16 @@ Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, conse
   </tbody>
 </table>
 
+<!--page-->
+
 Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
+
+
+
+
+
+
+
+
+
+

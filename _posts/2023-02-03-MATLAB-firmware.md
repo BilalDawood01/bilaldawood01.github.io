@@ -1,17 +1,21 @@
 ---
-date: 2018-07-20 12:26:40
+date: 2024-02-15 12:26:40
 layout: post
-title: A wonderful serenity has taken possession of my entire soul
-subtitle: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-image: https://res.cloudinary.com/dm7h7e8xj/image/upload/v1559820489/js-code_n83m7a.jpg
-optimized_image: https://res.cloudinary.com/dm7h7e8xj/image/upload/c_scale,w_380/v1559820489/js-code_n83m7a.jpg
-category: code
+title: Ericsson Indoor Planner Backend Programmer (MATLAB)
+subtitle: Assisted with code development of EIP backend calculations
+description: Utilized MATLAB and internal documentation to assist wit development of tool
+image: "/assets/img/uploads/STM32F411E-DISCO.png"
+optimized_image: "/assets/img/uploads/eip_matlab.jpg"
+category: Work Experience
 tags:
-  - platform
-  - javascript
-  - vscode
-author: mranderson
+  - MATLAB
+  - Documentation
+  - Report Writing
+  - Software Optimization
+  - Gerrit 
+  - Jira
+author: Bilal Dawood
+paginate: true
 ---
 
 Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
