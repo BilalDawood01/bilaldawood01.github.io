@@ -2,7 +2,7 @@
 layout: post
 date: 2024-05-09 12:26:40
 title: Bilal Dawood's Portfolio
-subtitle: 'An overview of my projects and academic progress'
+subtitle: 'An overview of my projects and academic progress (Website currently in progress)'
 description: >-
   I'm Bilal Dawood, an Electrical Engineering student at the University of Calgary. Passionate about innovation, I'm eager to carve a career path in embedded systems and AI/ML. 
   Beyond academics, I find enjoy partaking in sports like football, basketball, and swimming, fueling my energy  and teamwork skills. With diverse project experience, I'm equipped to make meaningful contributions in electronics and technolog.
@@ -17,11 +17,6 @@ paginate: true
 hero: true
 ---
 hehe, im probably gonna remove all this ngl.
-Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
-
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
-
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
 
 ## Inline HTML elements
 
@@ -33,6 +28,9 @@ HTML defines a long list of available inline tags, a complete list of which can 
 * Citations, like <cite>&mdash; Thomas A. Anderson</cite>, should use `<cite>`.
 * <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
 * Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
+* for hyperlink use `<a href="#">hyperlink</a>`
+* Quoting `>` 
+
 
 Most of these elements are styled by browsers with few modifications on our part.
 

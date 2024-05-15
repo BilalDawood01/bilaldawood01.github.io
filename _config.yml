@@ -52,9 +52,12 @@ menu:
   - title: About
     url: https://bilaldawood01.github.io/about/
   - title: Contact
-    url: /contact
+    url: https://bilaldawood01.github.io/contact
   - title: Feed
-    url: /feed.xml
+    url: https://bilaldawood01.github.io/feed.xml
+  - title: Academic Style
+    url: https://bilaldawood01.github.io/academic-style/
+
 email: bilaldawood099@outlook.com
 # See: https://disqus.com/
 disqus_username: disqus_username

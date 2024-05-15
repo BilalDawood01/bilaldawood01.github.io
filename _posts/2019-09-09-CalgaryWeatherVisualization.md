@@ -2,8 +2,8 @@
 date: 2019-09-09 12:26:40
 layout: post
 title: Interactive Calgary Weather Visualization
-subtitle: Placeholder
-description: Placeholder
+subtitle: Bar charts, scatter plots, data and buttons!
+description: Take a look at Calgary's weather trend for the past 50 years!
 image: 
 optimized_image: "/assets/img/uploads/WeatherDataVisualization_everything.png"
 category: Programming
@@ -14,118 +14,44 @@ tags:
 author: Bilal Dawood
 ---
 
-Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+## About the program and what it does:
+The following program takes in infomation regarding the weather of Calgary for the last 50 years (1969-2019). The data is grouped, and the program displays the maximum and minimum weather from each month (read and collected from the excel sheet), and also checks whether or not there was snowfall in that month.
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+The interactive GUI lets you:
+- Customize the way you want the data to be displayed (scatterplot/bar chart)
+- What information you want see (only minimum, maximum, snowfall for all or even specific months)
+- If you want see the weather (in Celcius), or just the snowfall (in cm)
 
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+## How it works:
 
-## Inline HTML elements
+The program is run from the Processing-Java-based IDE. The following GUI appears when the program successfully runs. 
 
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+<img src="/assets/img/weather/WeatherDataVisualization_everything.png" width="600" height="350">
 
-- **To bold text**, use `<strong>`.
-- *To italicize text*, use `<em>`.
-- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-- Citations, like <cite>&mdash; Thomas A. Anderson</cite>, should use `<cite>`.
-- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
+The buttons on the top are interactive, and allows the user to choose what type of data they want to see, allows the user to narrow down the data visible, and also allows the use to choose which graph format they prefer. 
 
-Most of these elements are styled by browsers with few modifications on our part.
+Below, the user selected "Barchart" > "Min"
+<img src="/assets/img/weather/WeatherDataVisualization_barmin.png" width="600" height="350">
 
-# Heading 1
+Below the user selected "Barchart" > Max"
 
-## Heading 2
+<img src="/assets/img/weather/WeatherDataVisualization_barmax.png" width="600" height="350">
 
-### Heading 3
+Below, the user selected "Scatterplot"
 
-#### Heading 4
+<img src="/assets/img/weather/WeatherDataVisualization_barmin.png" width="600" height="350">
 
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+Below, the user selected "Scatterplot" > "Min"
 
-## Code
+<img src="/assets/img/weather/WeatherDataVisualization_scatter_min.png" width="600" height="350">
 
-Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
+Below the user selected "Scatterplot" > Max"
 
-```js
-// Example can be run directly in your JavaScript console
+<img src="/assets/img/weather/WeatherDataVisualization_scatter_max.png" width="600" height="350">
 
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
+If wanted, the user can also see how many centimeters of snowfall there was in a specific month, as shown below.
 
-// Call the function
-adder(2, 6);
-// > 8
-```
-
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
-
-## Lists
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-
-* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-* Donec id elit non mi porta gravida at eget metus.
-* Nulla vitae elit libero, a pharetra augue.
-
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-
-1. Vestibulum id ligula porta felis euismod semper.
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
-
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-## Images
-
-Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
-
-![placeholder](https://placehold.it/800x400 "Large example image")
-![placeholder](https://placehold.it/400x200 "Medium example image")
-![placeholder](https://placehold.it/200x200 "Small example image")
-
-## Tables
-
-Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
-
-Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
-
+<img src="/assets/img/weather/WeatherDataVisualization_snowfall.png" width="600" height="350">
 
 
 
