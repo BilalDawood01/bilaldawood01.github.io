@@ -30,9 +30,9 @@ formspree_form_id: formspree_form_id
 # Social Media Settings
 # Remove the item if you don't need it
 github_username: BilalDawood01
-instagram_username: instagram_username
+# instagram_username: instagram_username
 linkedin_username: https://www.linkedin.com/in/bilal-dawood-2021/
-medium_username: medium_username
+# medium_username: medium_username
 
 
 # Posts Settings
