@@ -4,17 +4,53 @@ title: My Portfolio | A website of progress and projects
 description: Something that goes here
   and here...
 tags:
-  - blog
-  - template
+  - Python
+  - C
   - jekyll
-  - theme
-  - netlify
+  - C++
+  - JavaScript
+  - React Native
+  - PuTTy
+  - VHDL
+  - MATLAB
+  - Simulink
+  - Gerrit
+  - Jira
+  - Agile Scrum
+  - Sprint
+  - JavaScript
+  - MS Office Suite
+  - Assembly
+  - Linux
+  - Cadence Allegro
+  - Intel Quartus Prime
+  - MODELSIM
+  - NI Multisim
+  - PS:SE
+  - Xilinx Vivado
+  - Oscilloscope
+  - Spectrum Analyzer
+  - Multimeter
+  - Soldering
+  - Power Supplies
+  - STM MCU
+  - Pynq Z2 FPGA
+  - PIC MCU 
+  - Altera DE10 Lite FPGA
+  - Hardware Optimization
+  - Software Optimization
+  - Documentation
+  - Report Writing
+  - Presentation
+  - Circuit Designing
+  - Digital Signal Processing
+  - Data Visualization
 show_hero: true
 menu:
   - title: Home
     url: /
   - title: About
-    url: /about
+    url: https://bilaldawood01.github.io/about/
   - title: Contact
     url: /contact
   - title: Feed
