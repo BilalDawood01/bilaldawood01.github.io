@@ -4,7 +4,7 @@ layout: post
 title: Automated Enforcement of Bus-Only-Lanes and Crossing
 subtitle: Engineering Capstone Project with Calgary Transit
 description: A lot of work, but rpi, sensors, some ML and a server??? We did all that in 8 months??
-image:
+image: "/assets/img/uploads/cap_team_cut.jpg"
 optimized_image: "/assets/img/uploads/aebolc_bol_opt.jpg"
 category: Multilevel Projects
 tags:
@@ -22,7 +22,9 @@ tags:
 author: Bilal Dawood
 paginate: true
 ---
-<iframe width="560" height="315" src="https://www.youtube.com/embed/jDH6g9AS1LM?si=9ZntyRWyeXWFK7Dz&amp;start=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/jDH6g9AS1LM?si=9ZntyRWyeXWFK7Dz&amp;start=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WUyqIg1Y4xQ?si=MiVI6sxhs6xhodJ-&amp;start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Project Overview
 In this project, we worked with Calgary Transit to develop a hardware and software solution to help Calgary Transit combat the unauthorized use of Bus-Only-Lanes and Bus-Only-Crossing. The aim was to enhance efficiency of transit operations. Utilizing Raspberry Pi 4, we designed a low-maintenance, cost-effective solution that leverages existing onboard cameras for bus-only lanes and new camera setups for bus-only crossings. 
@@ -62,7 +64,8 @@ The results of our testing and project methodology were meticulously recorded in
 
 Needless to say, our sponsors and advisors enjoyed the project enough to invite us to share our solution with the rest of Calgary Transit during the Master's Project Showcasing.
 
-<img src="/assets/img/uploads/aeobolc_presentation.jpeg" width="600" height="350">
+<img src="/assets/img/uploads/aeobolc_presentation.jpeg">
+
 
 ## Skills and Technologies:
   - Programming Languages: Python, JavaScript

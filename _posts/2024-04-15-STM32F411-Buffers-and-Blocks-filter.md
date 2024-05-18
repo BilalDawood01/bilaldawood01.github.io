@@ -35,7 +35,7 @@ In this project for ENCM 515, I embarked on optimizing a circular buffer to enha
     <figcaption style="text-align: center;">Our Microcontroller</figcaption>
   </div>
   <div style="flex: 1; padding: 10px;">
-    <img src="/assets/img/img_conv/M4-Corenew.avif" alt="Processor" style="width: 100%;">
+    <img src="/assets/img/img_conv/M4-Corenew.png" alt="Processor" style="width: 100%;">
     <figcaption style="text-align: center;">Processor on the STM32F411-Disco</figcaption>
   </div>
 </div>
