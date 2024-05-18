@@ -21,9 +21,6 @@ tags:
 author: Bilal Dawood
 paginate: true
 ---
-
-# ENCM 515 Project: Optimizing Circular Buffer Implementation
-
 ## Introduction
 
 In this project for ENCM 515, I embarked on optimizing a circular buffer to enhance real-time signal processing in an embedded system. The primary goal was to refine the performance of the buffer, reducing memory usage while speeding up processing time—critical factors for applications such as audio signal processing.
