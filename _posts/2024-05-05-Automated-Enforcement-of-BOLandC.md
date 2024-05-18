@@ -64,9 +64,10 @@ The results of our testing and project methodology were meticulously recorded in
 
 Needless to say, our sponsors and advisors enjoyed the project enough to invite us to share our solution with the rest of Calgary Transit during the Master's Project Showcasing.
 
-<img src="/assets/img/uploads/aeobolc_presentation.jpeg">
-
-
+<div style="flex: 1; padding: 10px;">
+  <img src="/assets/img/uploads/aeobolc_presentation.jpeg" alt="Bilal Presentation" style="width: 100%;">
+  <figcaption style="text-align: center;">Presenting our solution and progress to Calgary Transit</figcaption>
+</div>
 ## Skills and Technologies:
   - Programming Languages: Python, JavaScript
   - Frameworks and Libraries: React, Electron.js, OpenCV, pytesseract
