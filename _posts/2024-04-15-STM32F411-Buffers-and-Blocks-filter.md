@@ -4,7 +4,7 @@ layout: post
 title: Audio Filtering on STM32F411 Microcontroller
 subtitle: Implement and compare Circular buffer, block processing and ARM assembly commands
 description: Implementation of various FIR filters on the ARM Cortex M4 processor through the use of ARM Assembly and C Code to clean a signal. 
-image: "/assets/img/uploads/STM32F411E-DISCO.png"
+image:
 optimized_image: "/assets/img/uploads/audio_filtering.png"
 category: Embedded Designing
 tags:
@@ -22,124 +22,86 @@ author: Bilal Dawood
 paginate: true
 ---
 
-Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+# ENCM 515 Project: Optimizing Circular Buffer Implementation
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+## Introduction
 
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+In this project for ENCM 515, I embarked on optimizing a circular buffer to enhance real-time signal processing in an embedded system. The primary goal was to refine the performance of the buffer, reducing memory usage while speeding up processing time—critical factors for applications such as audio signal processing.
 
-## Inline HTML elements
+<!-- ![System Architecture Diagram](path_to_image/system_architecture.png) -->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div style="flex: 1; padding: 10px;">
+    <img src="/assets/img/img_conv/STM32F411E-DISCO.png" alt="STM32F411-DISCO" style="width: 100%;">
+    <figcaption style="text-align: center;">Our Microcontroller</figcaption>
+  </div>
+  <div style="flex: 1; padding: 10px;">
+    <img src="/assets/img/img_conv/M4-Corenew.avif" alt="Processor" style="width: 100%;">
+    <figcaption style="text-align: center;">Processor on the STM32F411-Disco</figcaption>
+  </div>
+</div>
 
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
+## Initial Implementation
 
-- **To bold text**, use `<strong>`.
-- *To italicize text*, use `<em>`.
-- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-- Citations, like <cite>&mdash; Thomas A. Anderson</cite>, should use `<cite>`.
-- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
+The journey began with a basic function, `ProcessSample()`, designed to handle individual samples using a circular buffer. This function improved upon a naive linear buffer implementation by avoiding unnecessary data shuffling and using a `headIndex` to track the buffer's head position. This approach efficiently processed samples and consistently met timing constraints at various compiler optimization levels.
 
-Most of these elements are styled by browsers with few modifications on our part.
+<!-- ![ProcessSample Flowchart](path_to_image/process_sample_flowchart.png) -->
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div style="flex: 1; padding: 10px;">
+    <img src="/assets/img/img_conv/block_processing.png" alt="Block Processing illustration" style="width: 100%;">
+    <figcaption style="text-align: center;">Illustration of Block Processing</figcaption>
+  </div>
+  <div style="flex: 1; padding: 10px;">
+    <img src="/assets/img/img_conv/circular_buffer.gif" alt="Image Convolution Illustration" style="width: 100%;">
+    <figcaption style="text-align: center;">Circular Buffer Implementation</figcaption>
+  </div>
+</div>
 
-# Heading 1
+## Exploring Block Processing
 
-## Heading 2
+The next step involved processing multiple samples simultaneously using the `ProcessBlock()` function. This method aimed to boost overall performance by handling blocks of samples. While this approach enhanced processing efficiency, it struggled with larger block sizes, often failing to meet timing constraints. However, the filtered results remained accurate, producing clean sinusoidal waves with minimal noise.
 
-### Heading 3
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <div style="flex: 1; padding: 10px;">
+    <img src="/assets/img/img_conv/noisy.png" alt="Noisy Waveform" style="width: 100%;">
+    <figcaption style="text-align: center;">Values before applying Filter</figcaption>
+  </div>
+  <div style="flex: 1; padding: 10px;">
+    <img src="/assets/img/img_conv/circular_buffer_results.png" alt="Filtered Audio File Using Cicrular Buffer" style="width: 100%;">
+    <figcaption style="text-align: center;">Waveform after applying Circular Buffer filter</figcaption>
+  </div>
+</div>
 
-#### Heading 4
+## Optimization Through Loop Unrolling
 
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+To further optimize, I implemented loop unrolling in the `ProcessBlockU()` function. This technique performed multiple calculations per iteration, reducing loop overhead and significantly improving performance for smaller block sizes. This method allowed the system to meet timing constraints at higher optimization levels, although the benefits diminished with larger blocks, and performance gains plateaued.
 
-## Code
+<div style="flex: 1; padding: 10px;">
+  <img src="/assets/img/img_conv/processblock3.png" alt="Filtered Audio File Using Block Processing Buffer" style="width: 100%;">
+  <figcaption style="text-align: center;">Waveform after applying Block Processing with Buffer size = 3</figcaption>
+</div>
 
-Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
+## Special Assembly Instructions
 
-```js
-// Example can be run directly in your JavaScript console
+The final approach utilized special assembly instructions in the `AsemProcessBlockU()` function. This method aimed for maximum performance by leveraging low-level optimizations, reducing memory and arithmetic instructions. Despite an increase in branching instructions, this method maintained accurate filtering with clean sinusoidal outputs, highlighting the potential of assembly-level optimizations for real-time systems.
 
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
+## Observations
 
-// Call the function
-adder(2, 6);
-// > 8
-```
+The **ProcessSample()** function showed efficient sample processing with minimal instructions. It used only 8 memory instructions, 10 arithmetic instructions, and 2 branch instructions, achieving a time per sample of 0.0327ms at the highest optimization level (Ofast) and consistently met timing constraints.
 
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
+The **ProcessBlock()** function improved performance for smaller blocks. For a block size of 3, it used 13 memory instructions, 22 arithmetic instructions, and 6 branch instructions, achieving a time per sample of 0.09519ms and meeting timing constraints. However, with a block size of 16, it required 15 memory instructions, 25 arithmetic instructions, and 8 branch instructions, leading to a time per sample of 0.50548ms and failing to meet timing constraints.
 
-## Lists
+The **ProcessBlockU()** function demonstrated that loop unrolling could enhance performance for small block sizes. For a block size of 3, it used 32 memory instructions, 25 arithmetic instructions, and 8 branch instructions, achieving a time per sample of 0.08003ms and meeting timing constraints. However, for a block size of 16, it maintained the same number of instructions but resulted in a time per sample of 4.4354ms, failing to meet timing constraints.
 
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+The **AsemProcessBlockU()** function leveraged special assembly instructions to reduce overhead. For a block size of 3, it used 30 memory instructions, 18 arithmetic instructions, and 14 branch instructions, achieving a time per sample of 0.07991ms and meeting timing constraints. For a block size of 16, it required 38 memory instructions, 22 arithmetic instructions, and 18 branch instructions, resulting in a time per sample of 0.42311ms and failing to meet timing constraints.
 
-* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-* Donec id elit non mi porta gravida at eget metus.
-* Nulla vitae elit libero, a pharetra augue.
+### Summary of Differences
 
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
+**ProcessSample()** efficiently handled individual samples with minimal instructions and consistently met timing constraints. **ProcessBlock()** improved performance for small blocks but failed with larger sizes. **ProcessBlockU()** showed that loop unrolling enhanced performance for small blocks but did not scale well. **AsemProcessBlockU()** leveraged assembly-level optimizations effectively for small blocks but struggled with larger sizes due to increased branching instructions.
 
-1. Vestibulum id ligula porta felis euismod semper.
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
+## Conclusion
 
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
+This project successfully demonstrated the optimization of a circular buffer for real-time signal processing on an embedded system. By exploring various techniques and analyzing their impact, I gained valuable insights into low-level programming, assembly language, and performance tuning. This project underscores my capability to optimize embedded systems for high-performance applications, making me a strong candidate for roles requiring expertise in embedded systems and real-time signal processing.
 
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
+## Future Improvements
 
-## Images
-
-Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
-
-![placeholder](https://placehold.it/800x400 "Large example image")
-![placeholder](https://placehold.it/400x200 "Medium example image")
-![placeholder](https://placehold.it/200x200 "Small example image")
-
-## Tables
-
-Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
-
-Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-
-
-
-
-
-
-
-
-
+To further enhance performance, I plan to explore more sophisticated loop unrolling techniques tailored to the specific nature of signal processing tasks. Additionally, optimizing branching instructions to minimize performance bottlenecks and leveraging dedicated DSP (Digital Signal Processing) hardware to offload intensive computations will be key areas of focus.
