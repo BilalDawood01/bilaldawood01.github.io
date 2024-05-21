@@ -16,7 +16,11 @@ author: Bilal
 paginate: true
 hero: true
 ---
-hehe, im probably gonna remove all this ngl.
+
+
+You can head back to the home page or take a look at my personal favourite projects below! 
+
+
 
 ## Inline HTML elements
 

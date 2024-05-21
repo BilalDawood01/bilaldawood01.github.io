@@ -83,7 +83,7 @@ layout: main
                 {% for tag in post.tags limit: 6 %}
                   <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}">#{{ tag }}</a>
                 {% endfor %}
-                {% if post.tags | size > 6 %}
+                {% if (post.tags | size) > 6 %}
                   ...
                 {% endif %}
               {% endcapture %}
@@ -115,6 +115,16 @@ layout: main
 </script>
 
 <style>
+  .tags a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 2px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  
   .tags {
     min-height: 24px; /* Adjust this based on your design */
   }
@@ -131,8 +141,6 @@ layout: main
     display: none;
   }
 </style>
-
-
 
 {% assign social_urls = '' %}
 {% if site.github_username %}
