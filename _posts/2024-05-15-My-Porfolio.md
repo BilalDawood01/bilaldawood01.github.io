@@ -9,7 +9,7 @@ description: >-
   
 image: "/assets/img/uploads/portfolio_bkg_opt.jpg"
 optimized_image: "/assets/img/uploads/portfolio_bkg_opt.jpg"
-category: Intro
+category:
 tags:
   - welcome
 author: Bilal

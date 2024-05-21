@@ -21,8 +21,15 @@ tags:
 author: Bilal Dawood
 paginate: true
 ---
-## Introduction
-
+[Project Overview](#project-overview)
+[Initial implementation](#initial-implementation)
+[Exploring Block Processing](#exploring-block-processing)
+[Optimization Through Loop Unrolling](#optimization-through-loop-unrolling)
+[Special ARM Assembly Instruction](#special-assembly-instructions)
+[Observations](#observations)
+[Conclusion](#conclusion)
+[Future Improvements](#future-improvements)
+## Project Overview
 In this project for ENCM 515, I embarked on optimizing a circular buffer to enhance real-time signal processing in an embedded system. The primary goal was to refine the performance of the buffer, reducing memory usage while speeding up processing time—critical factors for applications such as audio signal processing.
 
 <!-- ![System Architecture Diagram](path_to_image/system_architecture.png) -->
@@ -38,7 +45,6 @@ In this project for ENCM 515, I embarked on optimizing a circular buffer to enha
 </div>
 
 ## Initial Implementation
-
 The journey began with a basic function, `ProcessSample()`, designed to handle individual samples using a circular buffer. This function improved upon a naive linear buffer implementation by avoiding unnecessary data shuffling and using a `headIndex` to track the buffer's head position. This approach efficiently processed samples and consistently met timing constraints at various compiler optimization levels.
 
 <!-- ![ProcessSample Flowchart](path_to_image/process_sample_flowchart.png) -->
@@ -54,7 +60,6 @@ The journey began with a basic function, `ProcessSample()`, designed to handle i
 </div>
 
 ## Exploring Block Processing
-
 The next step involved processing multiple samples simultaneously using the `ProcessBlock()` function. This method aimed to boost overall performance by handling blocks of samples. While this approach enhanced processing efficiency, it struggled with larger block sizes, often failing to meet timing constraints. However, the filtered results remained accurate, producing clean sinusoidal waves with minimal noise.
 
 <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -69,7 +74,6 @@ The next step involved processing multiple samples simultaneously using the `Pro
 </div>
 
 ## Optimization Through Loop Unrolling
-
 To further optimize, I implemented loop unrolling in the `ProcessBlockU()` function. This technique performed multiple calculations per iteration, reducing loop overhead and significantly improving performance for smaller block sizes. This method allowed the system to meet timing constraints at higher optimization levels, although the benefits diminished with larger blocks, and performance gains plateaued.
 
 <div style="flex: 1; padding: 10px;">
@@ -78,11 +82,9 @@ To further optimize, I implemented loop unrolling in the `ProcessBlockU()` funct
 </div>
 
 ## Special Assembly Instructions
-
 The final approach utilized special assembly instructions in the `AsemProcessBlockU()` function. This method aimed for maximum performance by leveraging low-level optimizations, reducing memory and arithmetic instructions. Despite an increase in branching instructions, this method maintained accurate filtering with clean sinusoidal outputs, highlighting the potential of assembly-level optimizations for real-time systems.
 
 ## Observations
-
 The **ProcessSample()** function showed efficient sample processing with minimal instructions. It used only 8 memory instructions, 10 arithmetic instructions, and 2 branch instructions, achieving a time per sample of 0.0327ms at the highest optimization level (Ofast) and consistently met timing constraints.
 
 The **ProcessBlock()** function improved performance for smaller blocks. For a block size of 3, it used 13 memory instructions, 22 arithmetic instructions, and 6 branch instructions, achieving a time per sample of 0.09519ms and meeting timing constraints. However, with a block size of 16, it required 15 memory instructions, 25 arithmetic instructions, and 8 branch instructions, leading to a time per sample of 0.50548ms and failing to meet timing constraints.
@@ -96,9 +98,7 @@ The **AsemProcessBlockU()** function leveraged special assembly instructions to 
 **ProcessSample()** efficiently handled individual samples with minimal instructions and consistently met timing constraints. **ProcessBlock()** improved performance for small blocks but failed with larger sizes. **ProcessBlockU()** showed that loop unrolling enhanced performance for small blocks but did not scale well. **AsemProcessBlockU()** leveraged assembly-level optimizations effectively for small blocks but struggled with larger sizes due to increased branching instructions.
 
 ## Conclusion
-
 This project successfully demonstrated the optimization of a circular buffer for real-time signal processing on an embedded system. By exploring various techniques and analyzing their impact, I gained valuable insights into low-level programming, assembly language, and performance tuning. This project underscores my capability to optimize embedded systems for high-performance applications, making me a strong candidate for roles requiring expertise in embedded systems and real-time signal processing.
 
 ## Future Improvements
-
 To further enhance performance, I plan to explore more sophisticated loop unrolling techniques tailored to the specific nature of signal processing tasks. Additionally, optimizing branching instructions to minimize performance bottlenecks and leveraging dedicated DSP (Digital Signal Processing) hardware to offload intensive computations will be key areas of focus.

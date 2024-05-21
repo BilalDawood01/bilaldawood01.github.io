@@ -17,6 +17,17 @@ tags:
   - 
 author: Bilal Dawood
 ---
+[Overview](#overview)
+[My Contribution](#my-contributions)
+[Teamwork and Collaboration](#teamwork-and-collaboration)
+[Project Details](#project-details)
+[Design Concept](#design-concept)
+[Techinical Specifications](#technical-specifications)
+[Product Casing](#product-casing)
+[Is this product really necessary? ](#is-this-product-really-necessary)
+[Technical Specifications and Features](#technical-specifications-and-features)
+[Achievements](#achievements)
+[Conclusion](#conclusion)
 
 Check out our [website](https://connorflc10.github.io/#){:target="_blank"} for more information! In the meantime check out our consumer pitch below. 
 

@@ -23,6 +23,13 @@ author: Bilal Dawood
 paginate: true
 ---
 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/jDH6g9AS1LM?si=9ZntyRWyeXWFK7Dz&amp;start=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+[Outline](#Project-Overview)  
+[Project Deliverables](#Project-Deliverables )  
+[Skills and Technologies](#skills-and-technologies)  
+[Project Challenges and Solutions](#project-challenges-and-solutions) 
+[Impact and Benefits](#impact-and-benefits)
+[Team Collaboration](#team-collaboration)
+[Future Enhancements](#future-enhancements)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WUyqIg1Y4xQ?si=MiVI6sxhs6xhodJ-&amp;start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -68,6 +75,7 @@ Needless to say, our sponsors and advisors enjoyed the project enough to invite 
   <img src="/assets/img/uploads/aeobolc_presentation.jpeg" alt="Bilal Presentation" style="width: 100%;">
   <figcaption style="text-align: center;">Presenting our solution and progress to Calgary Transit</figcaption>
 </div>
+
 ## Skills and Technologies:
   - Programming Languages: Python, JavaScript
   - Frameworks and Libraries: React, Electron.js, OpenCV, pytesseract
@@ -85,7 +93,6 @@ Needless to say, our sponsors and advisors enjoyed the project enough to invite 
   - Solution: Utilized kml coordinates from google earth and adjusted code base to account for upcoming traffic lights and intersections where vehicles may be allowed to enter bus only lanes (and turn). We ensure violations were recorded when the car continued to use the bus only lane instead of turning. 
 
 ## Impact and Benefits:
-
 This project significantly enhances the efficiency and safety of Calgary's transit operations by:
 - Reducing illegal use of bus-only lanes and crossings.
 - Minimizing transit delays caused by unauthorized vehicles.
