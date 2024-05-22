@@ -1,10 +1,10 @@
 ---
 date: 2023-02-15 12:26:40
 layout: post
-title: Ericsson Indoor Planner Backend Programmer (MATLAB)
-subtitle: Assisted with code development of EIP backend calculations
-description: Utilized MATLAB and internal documentation to assist wit development of tool
-image: "/assets/img/uploads/STM32F411E-DISCO.png"
+title: Digital Hardware Engineer
+subtitle: A quick summary of my internship role at Ericsson Canada Inc
+description: Hardware verification, automation development and presentations? Sounds funky
+image: 
 optimized_image: "/assets/img/uploads/digital_hw.jpg"
 category: Work Experience
 tags:
@@ -25,124 +25,37 @@ author: Bilal Dawood
 paginate: true
 ---
 
-Cas sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. *Aenean eu leo quam.* Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.
+## Hardware Testing:
 
-> Curabitur blandit tempus porttitor. Nullam quis risus eget urna mollis ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.
+### Power Rail Analysis on High Voltage Radio Boards
+In order to ensure proper voltage and current was being provided to all the components on the Ericsson Radio boards, I conducted **Power Rail Analysis**. I utilized the power tree to calculate the expected current and voltage at each rail. I also used the circuit schematics to locate the reference points and components I could use to measure the current and the voltage. I used a Multimeter to measure voltage on the high voltage radio board and measured continuity across capacitors to ensure no shorts were created. 
 
-Etiam porta **sem malesuada magna** mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.
+By the end of this task, I had displayed: 
+- proficiency in reading and understanding circuit schematics 
+- fundamental understanding of electrical characteristics and ratings
+- the ability to locate and perform hardware tests on physical components
+- an understanding of internal documentation
+- the ability to adhere to internal documentation requirements
+- organization skill through the meticulous recording and comparing of metrics
 
-## Inline HTML elements
+### Verification of Flash SPI Interface:
+- Collected, assessed, and debugged Read and Write timing parameters for Flash SPI interfaces using Oscilloscope.
+- Assisted with PCB design and verification using Allegro Cadence after referring to prior radio board schematics.
+- Led research on high frequency testing equipment, targeting optimal performance and value by comparing price with datasheet specifications and testing requirements. 
 
-HTML defines a long list of available inline tags, a complete list of which can be found on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Element).
-
-- **To bold text**, use `<strong>`.
-- *To italicize text*, use `<em>`.
-- Abbreviations, like <abbr title="HyperText Markup Langage">HTML</abbr> should use `<abbr>`, with an optional `title` attribute for the full phrase.
-- Citations, like <cite>&mdash; Thomas A. Anderson</cite>, should use `<cite>`.
-- <del>Deleted</del> text should use `<del>` and <ins>inserted</ins> text should use `<ins>`.
-- Superscript <sup>text</sup> uses `<sup>` and subscript <sub>text</sub> uses `<sub>`.
-
-Most of these elements are styled by browsers with few modifications on our part.
-
-# Heading 1
-
-## Heading 2
-
-### Heading 3
-
-#### Heading 4
-
-Vivamus sagittis lacus vel augue rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-
-## Code
-
-Cum sociis natoque penatibus et magnis dis `code element` montes, nascetur ridiculus mus.
-
-```js
-// Example can be run directly in your JavaScript console
-
-// Create a function that takes two arguments and returns the sum of those arguments
-var adder = new Function("a", "b", "return a + b");
-
-// Call the function
-adder(2, 6);
-// > 8
-```
-
-Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.
-
-## Lists
-
-Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-
-* Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
-* Donec id elit non mi porta gravida at eget metus.
-* Nulla vitae elit libero, a pharetra augue.
-
-Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-
-1. Vestibulum id ligula porta felis euismod semper.
-2. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
-3. Maecenas sed diam eget risus varius blandit sit amet non magna.
-
-Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.
-
-Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo.
-
-## Images
-
-Quisque consequat sapien eget quam rhoncus, sit amet laoreet diam tempus. Aliquam aliquam metus erat, a pulvinar turpis suscipit at.
-
-![placeholder](https://placehold.it/800x400 "Large example image")
-![placeholder](https://placehold.it/400x200 "Medium example image")
-![placeholder](https://placehold.it/200x200 "Small example image")
-
-## Tables
-
-Aenean lacinia bibendum nulla sed consectetur. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Upvotes</th>
-      <th>Downvotes</th>
-    </tr>
-  </thead>
-  <tfoot>
-    <tr>
-      <td>Totals</td>
-      <td>21</td>
-      <td>23</td>
-    </tr>
-  </tfoot>
-  <tbody>
-    <tr>
-      <td>Alice</td>
-      <td>10</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <td>Bob</td>
-      <td>4</td>
-      <td>3</td>
-    </tr>
-    <tr>
-      <td>Charlie</td>
-      <td>7</td>
-      <td>9</td>
-    </tr>
-  </tbody>
-</table>
-
-Nullam id dolor id nibh ultricies vehicula ut id elit. Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo.
+### Thermal Testing of Cheetah Networks Router:
+* Used thermal chamber to conduct testing of Cheetah Networks router to ensure reliability of performance withing a range of temperatures. 
+* To conduct the testing, we hooked various components of the router to a thermocouple to measure the differential between components and ensure a certain threshold was not exceeded. 
+* A representative from Cheetah Networks was present to ensure the router was working and to measure and test functionality at different temperature ranges. 
+* By successfully conducting and completing this task I displayed:
+  * the ability to work well with members of different companies. 
+  * an understanding of how to setup, use and take measurements from a thermocouple
+  * an awareness of lab safety practices by ensuring no laboratory equipment was left unattended and all precautions were taken. 
 
 
-
-
-
-
-
-
-
-
+## Automation Tool Development:
+### Ericsson Thermal Derating Tool: 
+If anyone were to ask me what the highlight of my co-op was, I would start to explain this automation tool to them.
+- Developed an automation tool in Python that achieved a 70% reduction in thermal verification time.
+-Used component datasheets to ensure comparison of metrics to maintain accuracy of results generated. Furthermore, created test cases to ensure reliability and function of automation tool.
+- Created documentation and presented the automation tool to the entire company, showcasing proficient research, report writing, and presentation skills.
