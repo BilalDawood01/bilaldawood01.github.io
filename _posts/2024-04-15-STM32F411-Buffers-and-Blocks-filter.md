@@ -22,13 +22,21 @@ author: Bilal Dawood
 paginate: true
 ---
 [Project Overview](#project-overview)
+
 [Initial implementation](#initial-implementation)
+
 [Exploring Block Processing](#exploring-block-processing)
+
 [Optimization Through Loop Unrolling](#optimization-through-loop-unrolling)
+
 [Special ARM Assembly Instruction](#special-assembly-instructions)
+
 [Observations](#observations)
+
 [Conclusion](#conclusion)
+
 [Future Improvements](#future-improvements)
+
 ## Project Overview
 In this project for ENCM 515, I embarked on optimizing a circular buffer to enhance real-time signal processing in an embedded system. The primary goal was to refine the performance of the buffer, reducing memory usage while speeding up processing time—critical factors for applications such as audio signal processing.
 
