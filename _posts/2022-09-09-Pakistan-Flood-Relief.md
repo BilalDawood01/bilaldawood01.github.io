@@ -1,5 +1,5 @@
 ---
-date: 2023-08-22 12:26:40
+date: 2022-08-22 12:26:40
 layout: post
 title: Ericsson Indoor Planner Backend Programmer (MATLAB)
 subtitle: Assisted with code development of EIP backend calculations

@@ -1,7 +1,7 @@
 ---
-date: 2024-02-15 12:26:40
+date: 2023-02-15 12:26:40
 layout: post
-title: Light The Night Lukema Fundraiser
+title: Light The Night Leukemia Fundraiser
 subtitle: Assisted with code development of EIP backend calculations
 description: Utilized MATLAB and internal documentation to assist wit development of tool
 image: 
