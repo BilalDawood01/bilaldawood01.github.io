@@ -4,7 +4,7 @@ layout: post
 title: Ericsson Indoor Planner - RapidScan Application
 subtitle: Assisted with code development of Ericsson Android Application
 description: 
-image: "/assets/img/uploads/STM32F411E-DISCO.png"
+image: 
 optimized_image: "/assets/img/uploads/android_app_dev.jpg"
 category: Work Experience
 tags:

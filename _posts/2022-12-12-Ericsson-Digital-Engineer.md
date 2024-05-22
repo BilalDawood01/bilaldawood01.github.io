@@ -1,5 +1,5 @@
 ---
-date: 2023-02-15 12:26:40
+date: 2023-08-30 12:26:40
 layout: post
 title: Digital Hardware Engineer
 subtitle: A quick summary of my internship role at Ericsson Canada Inc
@@ -55,7 +55,8 @@ By the end of this task, I had displayed:
 
 ## Automation Tool Development:
 ### Ericsson Thermal Derating Tool: 
-If anyone were to ask me what the highlight of my co-op was, I would start to explain this automation tool to them.
+If anyone were to ask me what the highlight of my co-op was, I would start to explain this automation tool to them. using Python and existing internal documentation, myself and another co-op were able to develop an automation tool that achieved a **70% reduction in thermal verification time**. For this task:
+* The **goal** was to automate the thermal derating process. A largely manual hardware verification process. Traditionally, this verification process involves the production of a heatmap of an Ericsson radio board. The tester would then locate components on the radio board, go to the Bill of Materials, find that components and determine whether the operating temperature shown in that area of heatmap is within the limits of the component. 
 - Developed an automation tool in Python that achieved a 70% reduction in thermal verification time.
 -Used component datasheets to ensure comparison of metrics to maintain accuracy of results generated. Furthermore, created test cases to ensure reliability and function of automation tool.
 - Created documentation and presented the automation tool to the entire company, showcasing proficient research, report writing, and presentation skills.
