@@ -35,6 +35,7 @@
             </article>
 
             {% if site.two_columns_layout %}
+            <!-- Might wanna change this to "Table of Contents" and have it scroll along -->
                 <aside class="see-also">
                     <h2>{{ site.translations.text.see_also | default: "See also" }}</h2>
                     <ul>
@@ -77,9 +78,9 @@
         {% endif %}
 
         {% include subscription.html %}
-        {% include share.html %}
+        <!-- {% include share.html %} -->
         {% include author.html %}
-        {% include comments.html %}
+        <!-- {% include comments.html %} -->
         {% include footer.html %}
 
         {% assign author = site.authors | where: "name", post.author | first %}
