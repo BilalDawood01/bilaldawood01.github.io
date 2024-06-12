@@ -15,10 +15,9 @@ author: Bilal
 paginate: true
 hero: true
 ---
+You can find a quick intro about me below or take a look at my [role specific resumes here!](https://github.com/BilalDawood01/LaTeX_Resume/tree/master/Targeted%20Resumes)
 
 I'm Bilal Dawood, an Electrical Engineering student at the University of Calgary. Passionate about innovation, I'm eager to carve a career path in embedded systems and AI/ML. 
-Beyond academics, I find enjoy partaking in sports like football, basketball, and swimming, fueling my energy  and teamwork skills. With diverse project experience, I'm equipped to make meaningful contributions in electronics and technolog.
+Beyond academics, I find enjoy partaking in sports like football, basketball, and swimming, fueling my energy  and teamwork skills. With diverse project experience, I'm equipped to make meaningful contributions in electronics and technology.
 
-You can head back to the home page or take a look at my role specific resume below! 
 
-[Link to Targeted Resumes](https://github.com/BilalDawood01/LaTeX_Resume/tree/master/Targeted%20Resumes)
