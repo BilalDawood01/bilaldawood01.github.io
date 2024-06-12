@@ -3,7 +3,7 @@ date: 2024-05-05 12:26:40
 layout: post
 title: Automated Enforcement of Bus-Only-Lanes and Crossing
 subtitle: Engineering Capstone Project with Calgary Transit
-description: A lot of work, but rpi, sensors, some ML and a server??? We did all that in 8 months??
+description: Working with Calgary Transit to prevent violations using object tracking and sensors.
 image: "/assets/img/uploads/cap_team_cut.jpg"
 optimized_image: "/assets/img/uploads/aebolc_bol_opt.jpg"
 category: Multilevel Projects
