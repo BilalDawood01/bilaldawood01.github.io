@@ -19,6 +19,12 @@ tags:
   - Digital Signal Processing
 author: Bilal Dawood
 paginate: true
+toc: true
 ---
 
+# Heading 1
+## Heading 2 
+### Heading 3
+
+# Heading 1.2
 placeholder

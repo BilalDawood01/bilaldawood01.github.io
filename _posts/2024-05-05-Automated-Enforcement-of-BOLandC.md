@@ -23,7 +23,7 @@ author: Bilal Dawood
 paginate: true
 ---
 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/jDH6g9AS1LM?si=9ZntyRWyeXWFK7Dz&amp;start=30" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
-[Outline](#Project-Overview)  
+<!-- [Outline](#Project-Overview)  
 
 [Project Deliverables](#Project-Deliverables )  
 
@@ -35,7 +35,7 @@ paginate: true
 
 [Team Collaboration](#team-collaboration)
 
-[Future Enhancements](#future-enhancements)
+[Future Enhancements](#future-enhancements) -->
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WUyqIg1Y4xQ?si=MiVI6sxhs6xhodJ-&amp;start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
