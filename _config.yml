@@ -102,8 +102,25 @@ show_get_theme_btn: true
 use_logo: false
 
 # Content paginator
+# paginate_content:
+#   enabled: true
+#   debug: false
+#   collections:
+#     - posts
+#   auto: false
+#   separator: "--page-break--"
+#   permalink: "/:num/"
+#   seo_canonical: true
+#   properties:
+#     part:
+#       is_generated: true
+#     last:
+#       is_generated: true
+#     single:
+#       is_generated: true
+# Content paginator
 paginate_content:
-  enabled: true
+  enabled: false  # Change this to false
   debug: false
   collections:
     - posts
@@ -111,13 +128,6 @@ paginate_content:
   separator: "--page-break--"
   permalink: "/:num/"
   seo_canonical: true
-  properties:
-    part:
-      is_generated: true
-    last:
-      is_generated: true
-    single:
-      is_generated: true
 
 # SASS
 sass:
@@ -127,6 +137,25 @@ sass:
 plugins:
   - jekyll-paginate
   - jekyll-paginate-content
+  - jekyll-toc
+
+# toc:
+#   min_level: 1
+#   max_level: 6
+#   no_toc_section_class: "no_toc_section"
+#   list_class: "section-nav"
+#   sublist_class: "sub-nav"
+#   item_class: "toc-entry"
+#   item_prefix: "toc-"
+#   header_level: 2
+#   id_prefix: "toc-"
+#   auto_id: true
+
+# Table of Contents translations
+translations:
+  text:
+    table_of_contents: "Table of Contents"
+    see_also: "See also"
 
 # Exclude my node related stuff
 exclude: [

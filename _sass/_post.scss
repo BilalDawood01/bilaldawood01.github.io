@@ -27,6 +27,54 @@
       padding: 0 rem(30px) 0 rem(10px);
     }
   }
+  .toc-container {
+    flex-basis: 30%;
+    padding: 0 rem(10px);
+
+    @include media(">=sm") {
+      position: sticky;
+      top: rem(50px);
+    }
+
+    #toc {
+      border: 1px solid #ccc;
+      background-color: #f9f9f9;
+      padding: rem(10px);
+      font-size: rem(14px);
+      line-height: rem(20px);
+
+      @include media(">=sm") {
+        font-size: rem(16px);
+        line-height: rem(25px);
+      }
+
+      h2 {
+        font-size: rem(24px);
+        font-weight: bold;
+        margin-bottom: rem(10px);
+        border-bottom: 1px solid $lightGray;
+        padding-bottom: rem(10px);
+
+        @include media(">=sm") {
+          padding-bottom: rem(20px);
+        }
+      }
+
+      nav ul,
+      nav ol {
+        padding-left: rem(20px);
+      }
+
+      nav a {
+        color: $themeColor;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
 }
 
 .post-content {
@@ -383,6 +431,78 @@
       }
     }
   }
+
+  #toc {
+    margin: rem(20px) auto;
+    padding: rem(10px);
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: rem(14px);
+    line-height: rem(20px);
+
+    @include media(">=sm") {
+      font-size: rem(16px);
+      line-height: rem(25px);
+    }
+
+    ul,
+    ol {
+      padding-left: rem(20px);
+    }
+
+    a {
+      color: $themeColor;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  // .see-also-links {
+  //   margin-top: rem(20px);
+
+  //   h2 {
+  //     font-size: rem(24px);
+  //     font-weight: bold;
+  //     border-bottom: 1px solid $lightGray;
+  //     padding: rem(10px) 0;
+  //     @include media(">=sm") {
+  //       padding: rem(48px) 0 rem(20px);
+  //     }
+  //   }
+
+  //   ul {
+  //     margin: 0;
+  //     padding: 0;
+  //     list-style: none;
+
+  //     li {
+  //       img {
+  //         display: block;
+  //         max-width: 100%;
+  //         height: auto;
+  //         border: 1px solid $lightGray;
+  //         border-radius: $borderRadius;
+  //       }
+
+  //       h3 {
+  //         font-size: rem(18px);
+  //         margin: rem(10px) 0;
+  //       }
+
+  //       a {
+  //         text-decoration: none;
+  //         color: $themeColor;
+
+  //         &:hover {
+  //           text-decoration: underline;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
 }
 
 /* Progress bar */

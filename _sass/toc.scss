@@ -1,0 +1,139 @@
+// Table of Contents Styles - Dark Theme
+.table-of-contents-sidebar {
+  width: 300px;
+  padding: 2rem 0 2rem 2rem;
+  
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
+
+.toc-container {
+  position: sticky;
+  top: 1.5 rem;  // Changed from 2rem to 2.5rem for more padding
+  max-height: calc(100vh - 15rem);
+  overflow-y: auto;
+}
+
+.table-of-contents {
+  background: #2d2d2d;
+  border: 1px solid #404040;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.toc-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  color: #ff0a16;
+  border-bottom: 2px solid #ff0a16;
+  padding-bottom: 0.5rem;
+}
+
+.toc-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  
+  li {
+    margin: 0;
+    padding: 0;
+    
+    a {
+      display: block;
+      padding: 0.4rem 0;
+      color: #cccccc;
+      text-decoration: none;
+      font-size: 0.9rem;
+      line-height: 1.4;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+      
+      &:hover {
+        color: #ff0a16;
+        background: rgba(255, 10, 22, 0.1);
+        padding-left: 0.5rem;
+        transform: translateX(2px);
+      }
+      
+      &:active,
+      &.active {
+        color: #ff0a16;
+        font-weight: 600;
+        background: rgba(255, 10, 22, 0.15);
+        padding-left: 0.5rem;
+      }
+    }
+  }
+  
+  .toc-level-2 a {
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+  
+  .toc-level-3 a {
+    padding-left: 1rem;
+    font-size: 0.85rem;
+    color: #aaaaaa;
+  }
+  
+  .toc-level-4 a {
+    padding-left: 2rem;
+    font-size: 0.8rem;
+    color: #999999;
+  }
+}
+
+// Smooth scrolling
+html {
+  scroll-behavior: smooth;
+}
+
+.post-content {
+  h2, h3, h4 {
+    scroll-margin-top: 2rem;
+  }
+}
+
+// Mobile responsive
+@media (max-width: 767px) {
+  .toc-container {
+    position: relative;
+    top: auto;
+    max-height: none;
+    margin: 2rem 0;
+    
+    .table-of-contents {
+      margin: 0 1rem;
+    }
+    
+    .toc-title {
+      cursor: pointer;
+      position: relative;
+      
+      &::after {
+        content: "▼";
+        position: absolute;
+        right: 0;
+        font-size: 0.8rem;
+        transition: transform 0.2s ease;
+      }
+      
+      &.collapsed::after {
+        transform: rotate(-90deg);
+      }
+    }
+    
+    .toc-list {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      
+      &.expanded {
+        max-height: 500px;
+      }
+    }
+  }
+}

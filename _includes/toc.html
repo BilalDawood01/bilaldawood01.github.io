@@ -1,1 +1,39 @@
-<!-- Add your table of contents here -->
+<!-- Table of Contents Generator -->
+{% assign headings = content | split: '<h' %}
+{% assign toc_content = '' %}
+{% assign has_headings = false %}
+
+{% for heading in headings %}
+  {% if forloop.first == true %}
+    {% continue %}
+  {% endif %}
+  
+  {% assign heading_level = heading | slice: 0, 1 | plus: 0 %}
+  {% if heading_level >= 2 and heading_level <= 4 %}
+    {% assign has_headings = true %}
+    {% assign heading_content = heading | split: '>' | first %}
+    {% assign heading_text = heading | split: '>' | slice: 1, 999 | join: '>' | split: '</h' | first %}
+    
+    <!-- Extract ID from heading if it exists, otherwise create one -->
+    {% if heading_content contains 'id="' %}
+      {% assign heading_id = heading_content | split: 'id="' | last | split: '"' | first %}
+    {% else %}
+      {% assign heading_id = heading_text | slugify %}
+    {% endif %}
+    
+    <!-- Build TOC entry -->
+    {% assign toc_entry = '<li class="toc-level-' | append: heading_level | append: '"><a href="#' | append: heading_id | append: '">' | append: heading_text | append: '</a></li>' %}
+    {% assign toc_content = toc_content | append: toc_entry %}
+  {% endif %}
+{% endfor %}
+
+{% if has_headings %}
+<div class="toc-container">
+  <nav class="table-of-contents">
+    <h3 class="toc-title">{{ site.translations.text.table_of_contents | default: "Table of Contents" }}</h3>
+    <ul class="toc-list">
+      {{ toc_content }}
+    </ul>
+  </nav>
+</div>
+{% endif %}
