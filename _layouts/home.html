@@ -31,15 +31,21 @@ layout: main
         <h1 class="title">{{ featured.title }}</h1>
         <p class="description">{{ featured.subtitle }}</p>
         <div class="buttons">
-          <a href="{{ featured.url | prepend: site.baseurl }}" role="button" class="button">
-            <svg><use xlink:href="#icon-read"></use></svg>
-            <span>{{ site.translations.button.read_now | default: "Read Now" }}</span>
+          <a href="https://www.linkedin.com/in/bilal-dawood-2021/" target="_blank" role="button" class="button" style="display: inline-flex; align-items: center; gap: 10px;">
+            <img src="{{ site.baseurl }}/assets/img/icons/linkedin_icon.png" alt="LinkedIn" class="button-icon">
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/BilalDawood01" target="_blank" role="button" class="button" style="display: inline-flex; align-items: center; gap: 10px;">
+            <img src="{{ site.baseurl }}/assets/img/icons/github_icon-25.png" alt="GitHub" class="button-icon">
+            <span>GitHub</span>
+          </a>
+          <a href="{{ site.baseurl }}/contact" role="button" class="button" style="display: inline-flex; align-items: center; gap: 10px;">
+            <img src="{{ site.baseurl }}/assets/img/icons/paper-plane-icon-25.png" alt="Contact" class="button-icon">
+            <span>Contact</span>
           </a>
         </div>
-      </div>
     </section>
   {% endif %}
-
   <section id="grid" class="row flex-grid">
     {% for post in posts offset: offset %}
       <article class="box-item">
